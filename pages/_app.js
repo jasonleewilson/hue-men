@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-// import Script from 'next/script'
+import Script from 'next/script'
 
 function MyApp({ Component, pageProps }) {
 
@@ -9,9 +9,9 @@ function MyApp({ Component, pageProps }) {
       {/* Global Site Tag (gtag.js) - Google Analytics */}
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=XXXXXXXXX`}
+        src={`https://www.googletagmanager.com/gtag/js?id=342227824`}
       />
-      <Script
+      {/* <Script
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
             });
           `,
         }}
-      />
+      /> */}
 
    <Component {...pageProps} />
    </>
