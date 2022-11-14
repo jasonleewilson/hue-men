@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=342227824`}
       />
-      {/* <Script
+      <Script id="my-script"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
             });
           `,
         }}
-      /> */}
+      />
 
    <Component {...pageProps} />
    </>
