@@ -1,16 +1,65 @@
 ---
-
+import "../styles/global.css";
 ---
 
-<html lang="en">
+<html lang='en'>
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<meta charset='utf-8' />
+		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+		<meta name='viewport' content='width=device-width' />
+		<meta name='generator' content={Astro.generator} />
+		<title>Hue-men.com</title>
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					"gtm.start": new Date().getTime(),
+					event: "gtm.js",
+				});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-WXFP2FT5");
+		</script>
+		<!-- End Google Tag Manager -->
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src='https://www.googletagmanager.com/ns.html?id=GTM-WXFP2FT5'
+				height='0'
+				width='0'
+				style='display:none;visibility:hidden'></iframe></noscript
+		>
+		<!-- End Google Tag Manager (noscript) -->
+		<div
+			class='flex justify-center items-center h-screen bg-gradient-to-bl from-[#3d3c3a] to-[#232325]'
+		>
+			<div
+				class='flex flex-col w-auto text-white justify-center items-center'
+			>
+				<h1 class='w-full text-sm text-left'>hue-men.com</h1>
+				<h2
+					class='text-neutral-500 text-4xl/8 sm:text-5xl/12 lg:text-9xl/28 font-bold text-left mb-4 uppercase'
+				>
+					The<br />power of<br /><span class='text-white'
+						>replacement</span
+					>
+				</h2>
+				<p class='w-full text-left text-neutral-500'>
+					Replace overthinking with action.<br />
+					Replace sugary drinks with water.<br />
+					Replace blame with accountability.<br />
+					Replace toxic friends with mentors.<br />
+					Replace bing watching with sleep.<br />
+					Replace complaining with gratitude.<br />
+				</p>
+			</div>
+		</div>
 	</body>
 </html>
