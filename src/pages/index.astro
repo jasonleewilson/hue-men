@@ -1,6 +1,5 @@
 ---
 import "../styles/global.css";
-import GTM from "../components/GTM.astro";
 ---
 
 <html lang='en'>
@@ -12,11 +11,35 @@ import GTM from "../components/GTM.astro";
 		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 		<title>Hue-men.com</title>
 		<!-- Google Tag Manager -->
-		<GTM id='GTM-WXFP2FT5' />
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					"gtm.start": new Date().getTime(),
+					event: "gtm.js",
+				});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-WXFP2FT5");
+		</script>
+		<!-- End Google Tag Manager -->
 	</head>
 	<body class='bg-[#232325]'>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src='https://www.googletagmanager.com/ns.html?id=GTM-WXFP2FT5'
+				height='0'
+				width='0'
+				style='display:none;visibility:hidden'></iframe></noscript
+		>
+		<!-- End Google Tag Manager (noscript) -->
 		<div
-			class='flex justify-center items-center min-h-[100dvh] bg-[radial-gradient(ellipse_at_top_right,_#3d3c3a,_#232325)]'
+			class='flex justify-center items-center h-screen bg-[radial-gradient(ellipse_at_top_right,_#3d3c3a,_#232325)]'
 		>
 			<div
 				class='flex flex-col w-auto text-white justify-center items-center'
@@ -34,7 +57,7 @@ import GTM from "../components/GTM.astro";
 					Replace sugary drinks with water.<br />
 					Replace blame with accountability.<br />
 					Replace toxic friends with mentors.<br />
-					Replace binge watching with sleep.<br />
+					Replace bing watching with sleep.<br />
 					Replace complaining with gratitude.<br />
 				</p>
 			</div>
